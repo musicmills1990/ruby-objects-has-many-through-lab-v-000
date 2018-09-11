@@ -20,7 +20,6 @@ def new_song(name, genre)
 end
 
 def songs
-  binding.pry
   Song.all
 end
 
