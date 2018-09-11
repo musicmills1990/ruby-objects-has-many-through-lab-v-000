@@ -23,5 +23,9 @@ def songs
   Song.all
 end
 
+def genres
+end
+
+
 
 end
