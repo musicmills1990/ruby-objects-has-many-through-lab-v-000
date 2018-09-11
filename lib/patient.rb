@@ -20,7 +20,10 @@ class Patient
   def appointment
     Appointment.all
   end
-  
+
+  def doctors
+    Appointment.all.select{|a| a.doctors}
+  end
 
 
 end
