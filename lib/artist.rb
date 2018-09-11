@@ -25,7 +25,7 @@ end
 
 def genres
   Song.all.map do |song|
-    song.genre << self
+    song.genre
   end
 end
 
