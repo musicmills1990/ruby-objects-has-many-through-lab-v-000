@@ -24,6 +24,7 @@ def songs
 end
 
 def genres
+  binding.pry
   Song.all.genre
 end
 
