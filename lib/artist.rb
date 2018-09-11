@@ -20,7 +20,7 @@ def new_song(name, genre)
 end
 
 def songs
-  Song.all << songs
+  Song.all
 end
 
 
