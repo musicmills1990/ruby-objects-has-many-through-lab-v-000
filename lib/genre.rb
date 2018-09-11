@@ -11,4 +11,10 @@ def self.all
   @@all
 end
 
+def songs
+  Song.all
+end
+
+def artists
+  Song.all.map{|song| song.artist}
 end
