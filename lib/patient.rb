@@ -22,7 +22,7 @@ class Patient
   end
 
   def doctors
-    Appointment.all.select{|a| a.doctors}
+    Appointment.all.select{|a| a.doctor}
   end
 
 
