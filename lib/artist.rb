@@ -19,7 +19,6 @@ Song.new(name, self, genre)
 end
 
 def songs
-  binding.pry
   Song.all.find_all{|song| song.artist == self}
 end
 
