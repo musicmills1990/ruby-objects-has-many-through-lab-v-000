@@ -25,8 +25,7 @@ end
 
 
 def genres
-genre_array = self.songs.map{|song| song.genre}
-genre_array.freeze
+self.songs.map{|song| song.genre}
 end
 
 end
