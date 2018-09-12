@@ -31,7 +31,7 @@ end
 
 
 def genres
-  self.songs.map{|song| song.genre}
+  self.songs.select{|song| song.genre}
 end
 
 end
