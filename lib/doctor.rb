@@ -22,7 +22,7 @@ class Doctor
   end
 
   def patients
-  patients_array = Appointment.all.select{|a| a.patient}
+  patients_array = Appointment.all.map{|a| a.patient}
   patients_array
   end
 
