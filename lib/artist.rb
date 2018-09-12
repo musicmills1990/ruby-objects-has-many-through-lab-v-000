@@ -17,16 +17,13 @@ end
 
 def new_song(name, genre)
   song = Song.new(name, self, genre)
-  song
+  @songs << song
 end
 
 def songs
   Song.all
 end
 
-def add_song(song)
-  @songs << song
-end
 
 def genres
   self.songs.map{|song| song.genre}
