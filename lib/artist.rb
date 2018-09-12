@@ -24,6 +24,10 @@ def songs
   Song.all
 end
 
+def add_song(song)
+  @song << song
+end
+
 def genres
   self.songs.map{|song| song.genre}
 end
