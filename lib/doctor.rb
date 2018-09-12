@@ -23,6 +23,7 @@ class Doctor
 
   def patients
   patients_array = Appointment.all.select{|a| a.patient}
+  patients_array
   end
 
 
