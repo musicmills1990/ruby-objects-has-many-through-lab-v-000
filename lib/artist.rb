@@ -31,7 +31,8 @@ end
 
 
 def genres
-  self.songs.map{|song| song.genre}
+genre_array = self.songs.map{|song| song.genre}
+genre_array
 end
 
 end
