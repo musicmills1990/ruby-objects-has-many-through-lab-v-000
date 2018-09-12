@@ -7,7 +7,6 @@ attr_accessor :name
 def initialize(name)
   @name = name
   @@all << self
-
 end
 
 def self.all
@@ -26,7 +25,7 @@ end
 
 
 def genres
-genre_array = Song.all.map{|song| song.genre}
+genre_array = self.songs.map{|song| song.genre}
 genre_array
 end
 
