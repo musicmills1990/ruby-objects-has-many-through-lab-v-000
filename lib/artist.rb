@@ -24,7 +24,6 @@ def songs
 end
 
 def genres
-  binding.pry
   self.songs.map{|song| song.genre}
 end
 
