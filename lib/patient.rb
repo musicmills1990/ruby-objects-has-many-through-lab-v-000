@@ -17,7 +17,7 @@ class Patient
   appointment
   end
 
-  def appointment
+  def appointments
     Appointment.all
   end
 
