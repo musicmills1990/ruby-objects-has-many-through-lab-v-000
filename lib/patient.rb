@@ -22,6 +22,7 @@ class Patient
   end
 
   def doctors
+    binding.pry
   doctors_array = Appointment.all.select{|a| a.doctor}
   doctors_array
   end
