@@ -20,7 +20,7 @@ end
 
 def songs
   binding.pry
-  Song.all
+  Song.all.find_all{|song| song.artist == self}
 end
 
 
