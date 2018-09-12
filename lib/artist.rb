@@ -26,7 +26,7 @@ end
 def genres
   binding.pry
   genres_array = Song.all.map{|song| song.genre}
-  genres_array
+  genres_array.uniq
 end
 
 
