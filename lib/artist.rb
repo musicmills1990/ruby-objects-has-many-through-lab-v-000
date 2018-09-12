@@ -15,10 +15,11 @@ end
 
 
 def new_song(name, genre)
-Song.new(name, self, genre)  
+Song.new(name, self, genre)
 end
 
 def songs
+  binding.pry
   Song.all
 end
 
