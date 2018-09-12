@@ -24,6 +24,7 @@ def songs
 end
 
 def genres
+  binding.pry
 Artist.all.map{|song| song.genre}
 end
 
