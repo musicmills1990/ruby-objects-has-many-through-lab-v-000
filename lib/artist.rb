@@ -24,10 +24,8 @@ def songs
 end
 
 def genres
-  genres_array = Song.all.map{|song| song.genre}
+  genres_array = Song.all.map{|song| song.genre.first}
   genres_array
 end
-
-
 
 end
