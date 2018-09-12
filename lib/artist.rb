@@ -24,7 +24,7 @@ def songs
 end
 
 def genres
-self.songs.map{|song| song.genre}
+Artist.all.map{|song| song.genre}
 end
 
 end
