@@ -22,7 +22,8 @@ class Patient
   end
 
   def doctors
-    self.appointments.select{|a| a.doctor}
+  doctors_array = Appointment.all.select{|a| a.doctor}
+  doctors_array
   end
 
 
